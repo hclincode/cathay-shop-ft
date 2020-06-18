@@ -7,7 +7,7 @@
     border-left: 1px groove;
     border-right: 1px groove;
     height:120px;
-    
+    overflow: hidden;
 }
 .logo {
     display: inline-block;
