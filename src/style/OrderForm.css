@@ -1,0 +1,74 @@
+.order-form-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99vw;
+    border-color: whitesmoke;
+    border-bottom: 1px groove;
+    border-left: 1px groove;
+    border-right: 1px groove;
+    height:120px;
+    
+}
+.logo {
+    display: inline-block;
+    
+    width:100px;
+    height:100px;
+    margin-left:5px;
+    margin-right:5px;
+    vertical-align: middle;
+    margin-top:15px;
+}
+
+.info {
+    display: inline-block;
+    
+    width: 65vw;
+    vertical-align: middle;
+}
+
+.type-date-container{
+    
+}
+
+.more {
+    display: inline-block;
+    color: gray;
+    text-align: right;
+    
+    height:120px;
+    
+}
+
+.img-logo {
+    width:90px;
+}
+
+.type {
+    display: inline-block;
+    font-weight: bolder;
+    color: rgb(0, 150, 0);
+}
+
+.date {
+    display: inline-block;  
+    font-weight: bold;
+    width:80%;
+    text-align: center;
+}
+
+.name {
+    padding-top: 10px;
+    line-height: 24px;
+    overflow: hidden;
+    max-height: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.gray {
+    color: gray;
+    filter: grayscale(100%);
+}

@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import OrderStatusCard from './components/OrderStatusCard';
+import OrderApi from './api/OrderApi';
+
+function compareByDateDESC(a, b) {
+  let keyA = new Date(a.date);
+  let keyB = new Date(b.date);
+  if (keyA < keyB) return 1;
+  if (keyA > keyB) return -1;
+  return 0;
+}
 
 function App() {
+  const orderStatus = OrderApi.getOrderStatus().orders;
+  let activeOrders = orderStatus.filter(x => x.status.code === 1 || x.status.code === 2).sort(compareByDateDESC);
+  let inactiveOrders = orderStatus.filter(x => x.status.code === 3 || x.status.code === 4).sort(compareByDateDESC);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <OrderStatusCard isActive={true} orders={activeOrders} title="進行中" />
+      <OrderStatusCard isActive={false} orders={inactiveOrders} title="已完成" />
     </div>
   );
 }

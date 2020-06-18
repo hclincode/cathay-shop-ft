@@ -1,0 +1,30 @@
+.order-status-card-container{
+    width : 100vw;
+}
+
+.title-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 99vw;
+    border-color: whitesmoke;
+    border-bottom: 1px groove;
+    border-left: 1px groove;
+    border-right: 1px groove;
+    background-color: whitesmoke;
+    height:40px;
+    
+}
+.card-title {
+    padding-top:10px;
+    padding-left:20px;
+    
+}
+
+#green-bar {
+    display:inline-block;
+    background: green;
+    height:18px;
+    width:5px;
+    margin-right:5px;
+    vertical-align: text-bottom;
+}
