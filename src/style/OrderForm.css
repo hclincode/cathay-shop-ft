@@ -22,21 +22,21 @@
 
 .info {
     display: inline-block;
-    
     width: 65vw;
     vertical-align: middle;
-}
-
-.type-date-container{
-    
 }
 
 .more {
     display: inline-block;
     color: gray;
-    text-align: right;
-    
+    text-align: center;
     height:120px;
+    vertical-align: middle;
+}
+
+.wrapper {    
+    padding-top:50px;
+    padding-bottom: 50px;
     
 }
 

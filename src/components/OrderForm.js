@@ -40,7 +40,11 @@ class OrderForm extends React.Component {
                     </div>
                     <div className="name">{this.showName()}</div>
                 </div>
-                <div className="more">{">"}</div>
+                <div className="more">
+                    <div className="wrapper">
+                        {">"}
+                    </div>
+                </div>
             </div>
         );
     }
